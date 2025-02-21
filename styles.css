@@ -1,61 +1,102 @@
-/* Color psychology for high conversions */
+/* Custom styles to complement Bootstrap */
 body {
-    background: #f5f5f5;
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-    padding: 20px;
-}
-
-.container {
-    max-width: 800px;
-    margin: auto;
-    padding: 40px;
-    background: #ffffff;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-.headline {
-    font-size: 2.5em;
-    color: #ff6b00; /* Attention-grabbing orange */
-    margin-bottom: 10px;
-}
-
-.subtext {
-    font-size: 1.2em;
-    color: #444;
-    margin-bottom: 20px;
-}
-
-.image-container {
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
-    gap: 15px;
+    flex-direction: column;
+    background-color: black;
+    position: relative;
+    overflow-x: hidden;
 }
 
-.zoom-img {
-    width: 200px;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff00ff);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    opacity: 0.15;
+    z-index: 0;
 }
 
-.zoom-img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
-.cta-button {
-    background: #ff6b00;
-    color: white;
-    padding: 15px 30px;
-    font-size: 1.2em;
+main {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.card {
+    transition: transform 0.2s ease-in-out;
+    background-color: rgba(33, 37, 41, 0.8);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.fas {
+    color: var(--bs-info);
+}
+
+/* Content section styles */
+.content-section {
+    background-color: rgba(33, 37, 41, 0.8);
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.list-group-item {
+    background-color: transparent;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
+    padding-left: 0;
 }
 
-.cta-button:hover {
-    background: #ff4500;
+.image-placeholder {
+    background-color: rgba(0, 123, 255, 0.1);
+    min-height: 200px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed var(--bs-border-color);
 }
+
+/* Footer enhancements */
+.footer {
+    background-color: rgba(33, 37, 41, 0.9) !important;
+    padding: 2rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 2rem !important;
+    }
+
+    .list-content {
+        border-right: none;
+        border-bottom: 1px solid var(--bs-border-color);
+        padding-right: 0;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+```
