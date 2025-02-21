@@ -9,3 +9,17 @@ body {
     font-family: Times New Roman, serif;
     text-align: center ;
 }
+.card-container {
+    display: flex;
+    justify-content: space-around; /* Distributes space evenly */
+    flex-wrap: wrap; /* Ensures responsiveness on small screens */
+    gap: 20px; /* Adds space between cards */
+}
+
+.card {
+    width: 30%; /* Each card takes 30% of the container width */
+    background-color: rgba(33, 37, 41, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
