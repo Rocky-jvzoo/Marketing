@@ -1,21 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>High-Converting Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Modern Webpage</title>
+    <!-- Bootstrap Replit Theme -->
+    <link rel="stylesheet" href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
 </head>
 <body>
-    <div class="container">
-        <h1 class="headline">Experience the Future</h1>
-        <p class="subtext">Transform your ideas into reality with us.</p>
-        <div class="image-container">
-            <img src="download.jpg" alt="Image 1" class="zoom-img">
-            <img src="Screenshot 2025-02-20 193723.png" alt="Image 2" class="zoom-img">
+    <!-- Header -->
+    <header class="py-3 mb-4 border-bottom">
+        <div class="container d-flex flex-wrap justify-content-center">
+            <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-decoration-none">
+                <i class="fas fa-code me-2"></i>
+                <span class="fs-4">Modern Webpage</span>
+            </a>
+            <nav class="navbar navbar-expand">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <button class="cta-button">Get Started</button>
-    </div>
-    <script src="script.js"></script>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container py-4">
+        <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">Welcome to Our Modern Webpage</h1>
+                <p class="col-md-8 fs-4">This is a simple yet modern webpage built with Bootstrap 5 and Flask.</p>
+                <button class="btn btn-secondary btn-lg" type="button">Learn more</button>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="row g-4 py-5">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="fas fa-rocket fa-2x mb-3"></i>
+                        <h5 class="card-title">Fast & Modern</h5>
+                        <p class="card-text">Built with the latest web technologies for optimal performance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="fas fa-mobile-alt fa-2x mb-3"></i>
+                        <h5 class="card-title">Responsive Design</h5>
+                        <p class="card-text">Looks great on all devices, from mobile phones to desktop computers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="fas fa-paint-brush fa-2x mb-3"></i>
+                        <h5 class="card-title">Beautiful UI</h5>
+                        <p class="card-text">Clean and modern interface with attention to detail.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- List and Image Section -->
+        <div class="content-section">
+            <div class="row">
+                <div class="col-md-6 list-content">
+                    <h3 class="mb-4">Your List Section</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">First item in the list</li>
+                        <li class="list-group-item">Second item in the list</li>
+                        <li class="list-group-item">Third item in the list</li>
+                        <!-- Add more list items as needed -->
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="image-placeholder">
+                        <i class="fas fa-image fa-3x text-muted"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Text Paragraph Section -->
+        <div class="content-section">
+            <h3 class="mb-4">Your Paragraph Section</h3>
+            <p class="lead">
+                This is a space for your paragraph text. You can write any content here. The text will be properly formatted and styled to match the overall design of the webpage.
+            </p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="row">
+                    <div class="col-12">
+                        <h5>Contact</h5>
+                        <p>Feel free to reach out: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <span class="text-body-secondary">© 2023 Modern Webpage. All rights reserved.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
