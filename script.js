@@ -11,7 +11,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
 });
 
 // Enhanced card animations
-document.querySelectorAll('.card').forEach(card => {
+document.querySelectorAll('.card').forEach(card container => {
     card.addEventListener('mouseenter', function() {
         this.style.transform = 'translateY(-10px)';
         this.style.transition = 'transform 0.3s ease-in-out';
