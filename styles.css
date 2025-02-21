@@ -27,6 +27,9 @@ body {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
+ul li {
+    margin-bottom: 15px; /* Adjust space as needed */
+}
 
 
 
