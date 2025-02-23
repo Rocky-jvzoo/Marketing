@@ -83,6 +83,8 @@ body {
   background: white; /* Optional: Adds a background */
   border-radius: 10px; /* Optional: Rounds the corners */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow */
+  margin-bottom: 50px; 
+
 }
 
 .grid-item-1 {
