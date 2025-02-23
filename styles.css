@@ -76,6 +76,7 @@ body {
   font-size: var(--h1-font-size);
   line-height: 1.1;
   color: var(--primary-color);
+  text-align: center;
 }
 .info-text {
   margin-top: 1.5rem;
