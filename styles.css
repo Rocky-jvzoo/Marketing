@@ -49,7 +49,11 @@ body {
   height: var(--fixed-header-height);
   padding: 0 1.7rem;
 }
-
+/* Logo Styling */
+.logo img {
+    height: 50px; /* Adjust height as needed */
+    width: auto; /* Keeps aspect ratio */
+}
 /* ==== WRAPPER ==== */
 .wrapper {
   width: 100%;
