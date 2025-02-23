@@ -67,6 +67,24 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
 }
+
+/* ==== GRID FOR THREE COLUMNS ==== */
+.grid-cols-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+  gap: 2rem; /* Adjusts space between items */
+  align-items: start; /* Aligns items at the top */
+  text-align: center;
+}
+
+/* Style for individual grid items */
+.grid-col-item {
+  padding: 20px;
+  background: white; /* Optional: Adds a background */
+  border-radius: 10px; /* Optional: Rounds the corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow */
+}
+
 .grid-item-1 {
   padding-top: 5rem;
   padding-left: 1.5rem;
