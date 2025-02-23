@@ -177,6 +177,46 @@ body {
   background: #d7e3ff;
 }
 
+/* ==== INSTANT ACCESS SECTION ==== */
+.instant-access {
+  margin-top: 4rem;
+  padding: 2rem;
+  background: #fff8e1;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.access-heading {
+  font-size: var(--h2-font-size);
+  font-weight: 700;
+  color: #d97706;
+  margin-bottom: 1.2rem;
+}
+
+.access-list {
+  list-style: none;
+  padding: 0;
+}
+
+.access-list li {
+  font-size: var(--font-size-body-text);
+  font-weight: 500;
+  color: #45260a;
+  padding: 10px;
+  background: #ffedd5;
+  margin: 8px 0;
+  border-radius: 8px;
+}
+
+.order-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: #b45309;
+  margin-top: 1.5rem;
+}
+
+
 /* ==== MEDIA QUERY FOR RESPONSIVENESS ==== */
 @media screen and (max-width: 768px) {
   .modules-list li {
